@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NISAR Earth Intelligence</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<link rel="stylesheet" href="styleLanding.css">
+</head>
+<body>
+<nav class="sticky z-50 backdrop-blur bg-[#080F1C]/85 border-b border-slate-800">
+ <div class="max-w-7xl mx-auto px-4 h-14 flex items-center gap-4">
+  <a href="#top" class="flex items-center gap-2.5 text-white font-bold">
+   <svg width="30" height="30" viewBox="0 0 36 36" fill="none"><rect width="36" height="36" rx="10" fill="#2563eb"/><circle cx="18" cy="18" r="6" stroke="#fff" stroke-width="2"/><ellipse cx="18" cy="18" rx="13" ry="5" transform="rotate(-30 18 18)" stroke="#fff" stroke-opacity=".7" stroke-width="1.6"/></svg>
+   <span class="text-sm">NISAR Earth Intelligence</span></a>
+  <div class="hidden md:flex items-center gap-5 text-sm text-slate-400 ms-6">
+   <a class="hover:text-cyan-300" href="#about" data-i="nAbout"></a><a class="hover:text-cyan-300" href="#how" data-i="nHow"></a><a class="hover:text-cyan-300" href="#types" data-i="nTypes"></a><a class="hover:text-cyan-300" href="#mission" data-i="nMission"></a></div>
+  <span class="flex-1"></span>
+  <button id="lang" class="h-9 px-3 rounded-lg border border-slate-700 text-sm font-semibold hover:bg-slate-800"></button>
+  <a href="app.html" class="h-9 px-4 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold grid place-items-center" data-i="open"></a>
+ </div>
+</nav>
+
+<header id="top" class="relative overflow-hidden pt-14 pb-24 md:pt-20 md:pb-28 bg-gradient-to-b from-[#080F1C] via-[#0B1528] to-[#080F1C]">
+ <div class="absolute inset-0 pointer-events-none opacity-25 flex items-center justify-center" aria-hidden="true">
+  <div class="w-[300px] h-[300px] sm:w-[600px] sm:h-[600px] rounded-full border border-cyan-500/30"></div>
+  <div class="absolute w-[450px] h-[450px] sm:w-[900px] sm:h-[900px] rounded-full border border-blue-500/20"></div>
+  <div class="absolute w-[600px] h-[600px] sm:w-[1200px] sm:h-[1200px] rounded-full border border-slate-700/30"></div>
+  <div class="absolute h-full w-px bg-gradient-to-b from-transparent via-cyan-500/30 to-transparent"></div>
+  <div class="absolute w-full h-px bg-gradient-to-r from-transparent via-cyan-500/30 to-transparent"></div>
+ </div>
+ <div class="relative max-w-7xl mx-auto px-4 sm:px-6 grid lg:grid-cols-12 gap-12 items-center">
+  <div class="lg:col-span-7 space-y-6 text-center lg:text-start">
+   <div class="pill"><span class="w-2 h-2 rounded-full bg-cyan-400 ping"></span><span data-i="badge"></span></div>
+   <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.25]"><span data-i="h1a"></span><br><span class="bg-gradient-to-r from-blue-400 via-cyan-300 to-teal-300 bg-clip-text text-transparent" data-i="h1b"></span></h1>
+   <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0" data-i="sub"></p>
+   <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+    <a href="app.html" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-semibold shadow-xl shadow-blue-600/30 text-center" data-i="cta1"></a>
+    <a href="#how" class="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-900/80 hover:bg-slate-800 text-slate-200 border border-slate-700 font-medium text-center" data-i="cta2"></a>
+   </div>
+   <div id="stats" class="pt-6 border-t border-slate-800 grid grid-cols-2 sm:grid-cols-4 gap-4 text-start"></div>
+  </div>
+  <div class="lg:col-span-5">
+   <div class="relative max-w-md mx-auto">
+    <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 to-cyan-500 rounded-3xl blur-xl opacity-30"></div>
+    <div class="relative rounded-2xl bg-[#101B2D] border border-slate-700 shadow-2xl overflow-hidden">
+     <div class="p-3 bg-[#080F1C] border-b border-slate-800 flex items-center justify-between text-xs font-mono"><span class="text-slate-300">before / after / change</span><span class="px-2 py-0.5 rounded bg-blue-900/60 text-cyan-300 font-semibold" data-i="illu"></span></div>
+     <div class="relative h-60 overflow-hidden bg-slate-950">
+      <svg viewBox="0 0 400 240" class="w-full h-full" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+       <defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a2f"/><stop offset="1" stop-color="#3b4a2c"/></linearGradient><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1e3a2f"/><stop offset="1" stop-color="#27456b"/></linearGradient></defs>
+       <rect width="133" height="240" fill="url(#g1)"/><rect x="133" width="134" height="240" fill="url(#g2)"/><rect x="267" width="133" height="240" fill="#0f172a"/>
+       <path d="M10 150c30-20 60-10 90 5s20 40-10 50-60 10-80-20z" fill="#4d5d34" opacity=".7"/>
+       <path d="M143 150c30-20 60-10 90 5s20 40-10 50-60 10-80-20z" fill="#3b82f6" opacity=".75"/>
+       <path d="M277 150c30-20 60-10 90 5s20 40-10 50-60 10-80-20z" fill="#3b82f6" opacity=".9"/>
+       <g stroke="#0b1528" stroke-width="3"><path d="M133 0v240M267 0v240"/></g>
+      </svg>
+      <div class="absolute inset-y-0 start-1/3 w-24 bg-gradient-to-r from-transparent via-cyan-400/20 to-transparent sweep pointer-events-none"></div>
+      <div class="absolute bottom-3 inset-x-3 flex justify-between text-[11px] font-semibold"><span class="px-2 py-0.5 rounded bg-black/60 text-white" data-i="before"></span><span class="px-2 py-0.5 rounded bg-black/60 text-white" data-i="after"></span><span class="px-2 py-0.5 rounded bg-black/60 text-white" data-i="chg"></span></div>
+     </div>
+     <div class="p-4 text-xs text-slate-400 border-t border-slate-800" data-i="illuN"></div>
+    </div>
+   </div>
+  </div>
+ </div>
+</header>
+
+<section id="about" class="py-20 border-t border-slate-800 bg-[#0A1324]"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+ <div class="text-center max-w-3xl mx-auto mb-14"><div class="pill mb-3" data-i="aTag"></div><h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug" data-i="aH"></h2><p class="mt-4 text-slate-300 leading-relaxed" data-i="aP"></p></div>
+ <div id="qs" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+</div></section>
+
+<section id="how" class="py-20 bg-[#080F1C]"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+ <div class="text-center max-w-3xl mx-auto mb-14"><div class="pill mb-3" data-i="hTag"></div><h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug" data-i="hH"></h2><p class="mt-4 text-slate-300 leading-relaxed" data-i="hP"></p></div>
+ <div id="sts" class="grid md:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+ <div class="mt-12 text-center"><a href="app.html" class="inline-flex px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-medium text-sm shadow-lg shadow-blue-600/20" data-i="cta3"></a></div>
+</div></section>
+
+<section id="types" class="py-20 border-t border-slate-800 bg-[#0A1324]"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+ <div class="text-center max-w-3xl mx-auto mb-14"><div class="pill mb-3" data-i="tTag"></div><h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug" data-i="tH"></h2><p class="mt-4 text-slate-300 leading-relaxed" data-i="tP"></p></div>
+ <div id="tys" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+ <div class="mt-10 rounded-xl border-s-4 border-amber-500 bg-amber-500/10 p-4"><div class="font-bold text-white text-sm mb-1" data-i="honT"></div><p class="text-sm text-slate-300 leading-relaxed" data-i="honP"></p></div>
+</div></section>
+
+<section id="mission" class="py-20 border-t border-slate-800 bg-[#080F1C]"><div class="max-w-7xl mx-auto px-4 sm:px-6">
+ <div class="grid lg:grid-cols-12 gap-10 items-center mb-14">
+  <div class="lg:col-span-7 space-y-4"><div class="pill" data-i="mTag"></div><h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug" data-i="mH"></h2><p class="text-slate-300 leading-relaxed" data-i="mP"></p></div>
+  <div class="lg:col-span-5 card"><div class="text-xs font-semibold text-cyan-400 mb-3" data-i="spec"></div><div id="specs" class="grid grid-cols-2 gap-3 text-xs"></div></div>
+ </div>
+ <div id="pil" class="grid md:grid-cols-3 gap-6 mb-14"></div>
+ <div class="rounded-3xl p-8 sm:p-12 bg-gradient-to-r from-blue-900/60 via-[#101B2D] to-cyan-950/60 border border-cyan-500/30 text-center">
+  <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-snug" data-i="fH"></h2>
+  <p class="mt-4 max-w-2xl mx-auto text-slate-300 leading-relaxed" data-i="fP"></p>
+  <a href="app.html" class="mt-7 inline-flex px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 text-white font-bold shadow-xl shadow-cyan-500/25" data-i="cta4"></a>
+ </div>
+</div></section>
+
+<footer class="border-t border-slate-800 py-8 text-center text-xs text-slate-500"><div class="flex flex-wrap justify-center gap-2 mb-3" dir="ltr"><span class="chip">NASA CMR · ASF DAAC</span><span class="chip">Sentinel-2 L2A</span><span class="chip">USGS</span><span class="chip">OpenStreetMap</span><span class="chip">Esri</span></div><span data-i="foot"></span></footer>
+<script src="./scriptLanding.js"></script>
+</body>
+</html>
